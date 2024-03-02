@@ -38,7 +38,7 @@ body {
 
 .containerGeneral {
     width: 100%;
-    height: 40vh;
+    /* height: 40vh; */
     color: var(--colorTextoGeneral);
     font-family: Open Sans;
     font-size: 16px;
@@ -59,12 +59,12 @@ body {
 .cabecero {
     width: 50%;
     margin: auto;
-    height: 40vh;
+    /* height: 40vh; */
     background-size: cover;
     background-position: center;
     position: relative;
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
     color: var(--colorTexto);
 }
 
@@ -303,41 +303,95 @@ h2 {
 
                                         /* WEB RESPONSIVE DESIGN */
 
-/* PANTALLAS MEDIANAS */
-@media screen and (min-width: 800px) and (max-width: 1002px){
-    .contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 60px auto;
-    }
-
+@media screen and (min-width: 855px){
     .presupuesto_titulo{
-        font-size: 25px;
-    }
-
-    .ingreso {
-        padding-bottom: 50px;
-        margin: 0;
-        width: 70%;
-    }
-
-    .egreso {
-        width: 70%;
+        font-size: 30px;
     }
 }
 
-/* PANTALLAS PEUQEÑAS */
-@media screen and (min-width: 400px) and (max-width: 799px){
 
+
+@media screen and (min-width: 641px) and (max-width: 854px){
     .containerGeneral__logo{
-        width: 90px;
+        width: 100px;
+        height: 80px;
     }
 
     .contenedor {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        margin: 0;
+    }
+
+    .cabecero{
+        width: 100%;
+    }
+    
+    .presupuesto{
+        width: 100%;
+    }
+    .presupuesto_ingreso, .presupuesto_egreso{
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .presupuesto_titulo {
+        font-size: 30px;
+    }
+
+    .presupuesto_valor{
+        font-size: 30px;
+    }
+
+    .agregar_contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agregar_tipo, .agregar_descripcion, .agregar_valor{
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .agregar_tipo{
+        font-size: 20px;
+    }
+
+    .agregar_btn{
+        padding-top: 15px;
+        font-size: 45px;
+    }
+
+    .ingreso, .egreso {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .ingreso{
+        padding-bottom: 40px;
+    }
+
+    .elemento_descripcion {
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+    
+    .containerGeneral__logo{
+        width: 70px;
+        height: 50px;
+    }
+
+    .contenedor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 
     .cabecero{
